@@ -5,7 +5,10 @@ import { SocialLinks } from "../components/SocialLinks";
 
 <Layout title="Social Links and other places you can find Nick Taylor online">
   <main class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-    <div class="flex flex-col items-center gap-8">
+    <div class="flex flex-col items-center gap-4 md:gap-8">
+      <h1 class="text-3xl md:text-6xl">
+        <em class="text-pink-700">Hi!</em> I'm Nick
+      </h1>
       <img
         src="https://res.cloudinary.com/nickytonline/image/upload/c_scale,h_300,w_300/v1653353570/alpaca-icon_r9sskj.png"
         alt=""
@@ -13,26 +16,35 @@ import { SocialLinks } from "../components/SocialLinks";
         height="300"
       />
       <SocialLinks />
-      <div class="grid gap-2 font-sans text-2xl text-center">
-        <p>
-          Blogging, talks, and more at <a
-            class="underline hover:text-pink-700 focus-within:text-pink-700"
-            href="https://nickyt.co">nickyt.co</a
-          >
-        </p>
-        <p>
-          Live streaming at <a
-            class="underline hover:text-pink-700 focus-within:text-pink-700"
-            href="https://nickyt.live">nickyt.live</a
-          >
-        </p>
-        <p>
-          Subscribe to my newsletter <a
-            class="underline hover:text-pink-700 focus-within:text-pink-700"
-            href="https://onetipaweek.com">OneTipAWeek.com</a
-          >
-        </p>
-      </div>
+      <nav aria-label="other links">
+        <ul
+          class="grid md:flex md:flex-wrap font-sans text-2xl text-center md:[&>li:not(:last-child)]:after:content-['|'] md:[&>li:not(:last-child)]:after:mx-2 md:[&>li:not(:first-child)]:ml-[5px]"
+        >
+          <li>
+            <a
+              class="underline hover:text-pink-700 focus-within:text-pink-700"
+              href="https://nickyt.co"
+              ><span class="sr-only"
+                >Blogging, talks, and more at
+              </span>nickyt.co</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline hover:text-pink-700 focus-within:text-pink-700"
+              href="https://nickyt.live"
+              ><span class="sr-only">Live streaming at </span>nickyt.live</a
+            >
+          </li>
+          <li>
+            <a
+              class="underline hover:text-pink-700 focus-within:text-pink-700"
+              href="https://onetipaweek.com"
+              ><span class="sr-only">My newsletter </span>OneTipAWeek.com</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
   </main>
 </Layout>
