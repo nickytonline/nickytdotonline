@@ -3,7 +3,7 @@ import type { LucideIcon } from 'lucide-react';
 
 interface SocialLinkProps {
   href: string;
-  icon: LucideIcon | React.FC<{ size?: number; className?: string }>;
+  icon: LucideIcon | { size?: number; className?: string };
   label: string;
   colorClass: string;
 }

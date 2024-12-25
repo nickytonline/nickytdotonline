@@ -1,6 +1,11 @@
 import React from 'react';
 
-export const BlueskyIcon: React.FC<{ size?: number; className?: string }> = ({ size = 24, className = '' }) => (
+interface BlueskyIconProps {
+  size?: number;
+  className?: string;
+}
+
+export const BlueskyIcon = ({ size = 24, className = '' }: BlueskyIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
