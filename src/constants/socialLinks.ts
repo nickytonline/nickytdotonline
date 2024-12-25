@@ -1,8 +1,8 @@
 import { Github, Linkedin, Instagram, Youtube, Twitch } from 'lucide-react';
 import { BlueskyIcon } from '../components/BlueskyIcon';
-import { DiscordIcon } from '../components/DiscordIcon';
 import { XIcon } from '../components/XIcon';
 import type { LucideIcon } from 'lucide-react';
+import { MastodonIcon } from '../components/icons/MastodonIcon';
 
 interface SocialLink {
   href: string;
@@ -55,9 +55,9 @@ export const socialLinks: SocialLink[] = [
     colorClass: 'group-hover:text-x group-focus-visible:text-x'
   },
   {
-    href: 'https://discord.iamdeveloper.com',
-    icon: DiscordIcon,
-    label: 'Discord',
-    colorClass: 'group-hover:text-discord group-focus-visible:text-discord'
-  },
+    href: 'https://toot.cafe/@nickytonline',
+    icon: MastodonIcon,
+    label: 'Mastodon',
+    colorClass: 'group-hover:text-mastodon group-focus-visible:text-mastodon'
+  }
 ];

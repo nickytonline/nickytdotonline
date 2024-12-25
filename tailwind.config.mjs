@@ -13,6 +13,7 @@ export default {
         'discord': '#5865F2',
         'bluesky': '#0560FF',
         'x': '#1DA1F2',
+        'mastodon': '#635BFF',
       },
     }
   },
