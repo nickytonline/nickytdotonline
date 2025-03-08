@@ -14,6 +14,7 @@ export default {
         'bluesky': '#0560FF',
         'x': '#1DA1F2',
         'mastodon': '#635BFF',
+        'tiktok': '#00F2EA',
       },
     }
   },

@@ -3,6 +3,7 @@ import { BlueskyIcon } from '../components/BlueskyIcon';
 import { XIcon } from '../components/XIcon';
 import type { LucideIcon } from 'lucide-react';
 import { MastodonIcon } from '../components/icons/MastodonIcon';
+import { TikTokIcon } from '../components/icons/TikTokIcon';
 
 interface SocialLink {
   href: string;
@@ -59,5 +60,11 @@ export const socialLinks: SocialLink[] = [
     icon: MastodonIcon,
     label: 'Mastodon',
     colorClass: 'group-hover:text-mastodon group-focus-visible:text-mastodon'
+  },
+  {
+    href: 'https://tiktok.com/@nickytonline',
+    icon: TikTokIcon,
+    label: 'TikTok',
+    colorClass: 'group-hover:text-tiktok group-focus-visible:text-tiktok'
   }
 ];
